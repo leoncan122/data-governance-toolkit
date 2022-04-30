@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className="min-h-screen pt-12 top-0 p-4 md:p-5 ">
+    <main className="min-h-screen pt-12 top-0 px-26 md:pt-18">
       <Head>
         <title>Data Governance Toolkit</title>
         <meta
@@ -15,8 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="flex flex-col sm:pt-9 sm:h-11/12 sm:grid grid-cols-2 grid-rows-5 gap-9 sm:gap-2">
-        <h1 className="col-start-2 sm:w-4/5 row-start-1 self-end text-5xl font-bold ">
+      <section className="flex flex-col sm:pt-9 sm:h-11/12 sm:grid grid-cols-2 grid-rows-5 gap-9 sm:gap-2">
+        <h1 className="col-start-2 sm:w-4/5 row-start-1 self-end text-5xl font-bold">
           Data that works for you
         </h1>
         <h2 className="col-start-2 sm:w-4/5 row-start-2 self-start text-3xl font-bold">
@@ -29,14 +29,14 @@ export default function Home() {
           all of their data activities and data management in one place
         </p>
         <div className="col-start-2 row-start-5 flex justify-around">
-          <button className="rounded-md bg-blue-800 px-3 py-1 text-white font-semibold tracking-wide">
+          <button className="rounded-md sm:max-h-8 bg-blue-800 px-3 py-1 text-white font-semibold tracking-wide">
             Demo our product
           </button>
-          <button className="rounded-md bg-yellow-500 px-3 py-1 text-blue-800 font-semibold tracking-wide ">
+          <button className="rounded-md sm:max-h-8 bg-yellow-500 px-3 py-1 text-blue-800 font-semibold tracking-wide ">
             Contact us
           </button>
         </div>
-      </header>
-    </div>
+      </section>
+    </main>
   );
 }

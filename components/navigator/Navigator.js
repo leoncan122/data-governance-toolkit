@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Navigator() {
   return (
-    <>
-      <nav className="p-2 hidden sm:block absolute w-full bg-transparent">
+    <header>
+      <nav className="p-2 hidden sm:block  absolute w-full sm:w-10/12 bg-transparent">
         <ul className="flex justify-between">
           <li className="p-3">Logo</li>
           <li className="p-3">
@@ -28,12 +28,12 @@ export default function Navigator() {
           </li>
         </ul>
       </nav>
-      <div className="w-full block sm:hidden p-2 bg-transparent rounded-sm absolute">
+      <nav className="w-full h-1/5 block sm:hidden p-2 bg-transparent rounded-sm absolute">
         <ul className="flex justify-between ">
           <li>Logo</li>
           <li>Options</li>
         </ul>
-      </div>
-    </>
+      </nav>
+    </header>
   );
 }
