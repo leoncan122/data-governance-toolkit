@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <main className="min-h-screen pt-12 top-0 px-26 md:pt-18">
+    <main className="min-h-screen px-6 py-16 top-0 px-26 md:pt-18">
       <Head>
         <title>Data Governance Toolkit</title>
         <meta
@@ -15,14 +15,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="flex flex-col sm:pt-9 sm:h-11/12 sm:grid grid-cols-2 grid-rows-5 gap-9 sm:gap-2">
-        <h1 className="col-start-2 sm:w-4/5 row-start-1 self-end text-5xl font-bold">
+      <section
+        className="flex flex-col sm:pt-9 sm:h-11/12 sm:grid grid-cols-2 grid-rows-5 gap-9 sm:gap-2"
+        styles={styles.bg}
+      >
+        <h1 className="col-start-2 sm:w-4/5 row-start-1 self-end  font-bold">
           Data that works for you
         </h1>
-        <h2 className="col-start-2 sm:w-4/5 row-start-2 self-start text-3xl font-bold">
+        <h2 className="col-start-2 sm:w-4/5 row-start-2 self-start  font-bold">
           Data systems for community health and non-profit-organizations
         </h2>
-        {/* <Image></Image> */}
+
         <p className="col-start-2 row-start-4">
           The <strong>Data Governance Toolkit</strong> is an online platform
           that helps community based organisations better manage and coordinate

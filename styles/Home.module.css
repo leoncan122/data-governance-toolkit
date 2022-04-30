@@ -1,4 +1,5 @@
 .bg {
-  /* background-image: url("../public/bg-header.jpg"); */
-  background-color: antiquewhite;
+  background-image: url("../public/bg-header.jpg");
+  width: 600px;
+  object-fit: contain;
 }
