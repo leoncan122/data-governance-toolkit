@@ -3,7 +3,7 @@ import Head from "next/head";
 export default function CommunityOrganisations() {
   return (
     <>
-      <main className="min-h-screen pt-12 top-0 px-26 md:pt-18">
+      <main className="min-h-screen px-6 py-16 top-0 px-26 md:pt-18">
         <Head>
           <title>Data Governance Toolkit</title>
           <meta

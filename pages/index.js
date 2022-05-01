@@ -1,9 +1,10 @@
 import Head from "next/head";
+import Footer from "../components/Footer";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <main className="min-h-screen px-6 py-16 top-0 px-26 md:pt-18">
+    <main className="min-h-screen px-6 py-16 top-0  md:pt-18">
       <Head>
         <title>Data Governance Toolkit</title>
         <meta
@@ -15,14 +16,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section
-        className="flex flex-col sm:pt-9 sm:h-11/12 sm:grid grid-cols-2 grid-rows-5 gap-9 sm:gap-2"
-        styles={styles.bg}
-      >
-        <h1 className="col-start-2 sm:w-4/5 row-start-1 self-end  font-bold">
+      <section className="flex flex-col sm:pt-7 sm:h-11/12 sm:grid grid-cols-2 grid-rows-5 gap-9 sm:gap-2">
+        <h1 className="col-start-2  row-start-1 self-end">
           Data that works for you
         </h1>
-        <h2 className="col-start-2 sm:w-4/5 row-start-2 self-start  font-bold">
+        <h2 className="col-start-2 sm:w-4/5 row-start-2 self-start">
           Data systems for community health and non-profit-organizations
         </h2>
 
@@ -31,15 +29,16 @@ export default function Home() {
           that helps community based organisations better manage and coordinate
           all of their data activities and data management in one place
         </p>
-        <div className="col-start-2 row-start-5 flex justify-around">
-          <button className="rounded-md sm:max-h-8 bg-blue-800 px-3 py-1 text-white font-semibold tracking-wide">
+        <div className="col-start-2 row-start-5 flex  justify-around">
+          <button className="w-5/12 rounded-md sm:max-h-9 bg-blue-800 px-3 py-1 text-white font-semibold tracking-wide">
             Demo our product
           </button>
-          <button className="rounded-md sm:max-h-8 bg-yellow-500 px-3 py-1 text-blue-800 font-semibold tracking-wide ">
+          <button className="w-5/12 rounded-md sm:max-h-9 bg-yellow-500 px-3 py-1 text-blue-800 font-semibold tracking-wide ">
             Contact us
           </button>
         </div>
       </section>
+      <Footer></Footer>
     </main>
   );
 }
