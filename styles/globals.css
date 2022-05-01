@@ -7,9 +7,10 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #132d83;
 }
 #__next {
-  @apply sm:w-10/12 sm:mx-20;
+  @apply sm:w-10/12 sm:ml-28 sm:mr-20;
 }
 a {
   color: inherit;
