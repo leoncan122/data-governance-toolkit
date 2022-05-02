@@ -1,9 +1,20 @@
+import Image from "next/image";
+import mypic from "../../public/icon-subscribe-section.svg";
 export default function Footer() {
   return (
     <>
-      <footer className="flex flex-col h-96 items-center justify-around md:flex-row bg-main-color">
-        <div className="h-28 sm:w-2/6">Imagen</div>
-        <div className="w-full h-3/5 text-center sm:text-left sm:w-8/12 sm:pr-24 flex flex-col justify-around">
+      <footer className="flex flex-col h-auto md:h-80 items-center justify-around   p-6  md:flex-row bg-main-color">
+        {/* <div className="h-28 sm:w-2/6">
+        </div> */}
+        <Image
+          src={mypic}
+          width={130}
+          height={130}
+          alt="icon-subscribe"
+          className="sm:w-2/6"
+        ></Image>
+
+        <div className="w-full h-full text-center sm:text-left sm:w-8/12 sm:pr-24 flex flex-col justify-around">
           <h2>
             Learn about the key Data Governance components trough our free
             course

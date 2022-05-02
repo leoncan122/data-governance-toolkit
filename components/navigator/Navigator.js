@@ -1,12 +1,19 @@
 import Link from "next/link";
 import styles from "../../styles/Navigator.module.css";
+import iconLogo from "../../public/platformable-icon-logo.svg";
+import Image from "next/image";
 
 export default function Navigator() {
   return (
     <header>
-      <nav className="p-2 hidden sm:block  absolute w-full sm:w-10/12 bg-transparent">
+      <nav className="p-5 hidden sm:block  absolute w-full  bg-transparent">
         <ul className="flex justify-between">
-          <li className="p-3">Logo</li>
+          <Image
+            src={iconLogo}
+            width={50}
+            height={50}
+            alt="platformable-logo"
+          ></Image>
           <li className="p-3">
             <Link href="/">
               <a>Home</a>
@@ -29,9 +36,14 @@ export default function Navigator() {
           </li>
         </ul>
       </nav>
-      <nav className="w-full h-1/5 block sm:hidden p-2 bg-transparent rounded-sm absolute">
+      <nav className="w-full h-2/5 block sm:hidden p-5 bg-transparent rounded-sm absolute">
         <ul className="flex justify-between ">
-          <li>Logo</li>
+          <Image
+            src={iconLogo}
+            width={50}
+            height={50}
+            alt="platformable-logo"
+          ></Image>
           <li>Options</li>
         </ul>
       </nav>
