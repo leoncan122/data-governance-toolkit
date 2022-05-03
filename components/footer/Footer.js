@@ -1,5 +1,5 @@
 import Image from "next/image";
-import mypic from "../../public/icon-subscribe-section.svg";
+import mypic from "../../public/home-img/icon-subscribe-section.svg";
 export default function Footer() {
   return (
     <>
@@ -11,7 +11,6 @@ export default function Footer() {
           width={130}
           height={130}
           alt="icon-subscribe"
-          className="sm:w-2/6"
         ></Image>
 
         <div className="w-full h-full text-center sm:text-left sm:w-8/12 sm:pr-24 flex flex-col justify-around">

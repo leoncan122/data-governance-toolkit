@@ -9,7 +9,7 @@ body {
     Helvetica Neue, sans-serif;
   color: #0f2d80;
 }
-/* -apple-system, BlinkMacSystemFont, Segoe UI, */
+
 #__next {
   /* @apply sm:w-10/12 sm:ml-28 sm:mr-20; */
 }
@@ -31,14 +31,15 @@ h3 {
 }
 
 .bg-image-section {
-  background-image: url("../public/bg-img-hero-section.png");
+  background-image: url("../public/home-img/bg-img-hero-section.png");
   background-size: cover;
   height: 115vh;
 }
 
 .bg-main-color {
-  background-color: #cfddfa;
+  background-color: #dee9ff;
 }
+
 .bg-main-color-gradient {
   background: linear-gradient(
     0deg,
@@ -49,4 +50,13 @@ h3 {
 
 .min-vh-150 {
   min-height: 120vh;
+}
+
+.circular-container {
+  height: 300px;
+  width: 300px;
+  border-radius: 150%;
+  background-color: #f0f4ff;
+  padding: 7%;
+  margin: 4% 0;
 }
