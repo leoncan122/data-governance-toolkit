@@ -39,12 +39,13 @@ export default function CommunityOrganisations() {
               <h2 className="my-5 tracking-wide md:self-start ">
                 Data Governance for comunnity organisations
               </h2>
-              <div className="h-6/12 font-bold text-2xl   rounded-xl my-5 border-solid border-2 border-yellow-400 p-5">
+              <div className="h-6/12 font-bold text-2xl my-5 border-solid border-2 border-yellow-400 p-5">
                 Data is necessary asset for community-based organisations when
                 working to meet your goals and reduce societal inequalities
               </div>
-              <ul className="flex flex-col md:flex-row justify-around items-center">
-                <li className="w-64 md:w-72 h-72 leading-relaxed bg-white shadow-xl rounded-lg p-4 my-6 block text-center">
+              {/* //flex-row justify-around items-center */}
+              <ul className="flex flex-col  md:grid md:grid-cols-4 md:gap-3">
+                <li className="w-64  h-72 leading-relaxed   p-4 my-6 block text-center">
                   <Image
                     src={ensureIcon}
                     width={150}
@@ -54,7 +55,7 @@ export default function CommunityOrganisations() {
                   <h3>Ensure</h3>
                   <p className="text-xl">data quality</p>
                 </li>
-                <li className="w-64 md:w-72 h-72 leading-relaxed bg-white shadow-xl rounded-lg p-4 my-6 block text-center">
+                <li className="w-64  h-72 leading-relaxed   p-4 my-6 block text-center">
                   <Image
                     src={improveIcon}
                     width={150}
@@ -65,7 +66,7 @@ export default function CommunityOrganisations() {
                   <h3>Improve</h3>
                   <p className="text-xl">service delivery</p>
                 </li>
-                <li className="w-64 md:w-72 h-72  leading-relaxed bg-white shadow-xl rounded-lg p-4 my-6 block text-center">
+                <li className="w-64  h-72  leading-relaxed   p-4 my-6 block text-center">
                   <Image
                     src={advocateIcon}
                     width={150}
@@ -76,7 +77,7 @@ export default function CommunityOrganisations() {
                   <h3>Advocate</h3>
                   <p className="text-xl">more effectively</p>
                 </li>
-                <li className="w-64 md:w-72 h-72 leading-relaxed bg-white shadow-xl rounded-lg p-4 my-6 block text-center">
+                <li className="w-64  h-72 leading-relaxed   p-4 my-6 block text-center">
                   <Image
                     src={generateIcon}
                     width={150}
@@ -96,9 +97,9 @@ export default function CommunityOrganisations() {
               </h2>
               <p className="my-8 text-xl font-semibold leading-relaxed">
                 Our data governance toolkit has been used by large community
-                health organisations across the United States and smaller
-                looking to improve data collection and reporting for a single
-                program
+                health organizations across the United States and smaller
+                agencies looking to improve data collection and reporting for a
+                single program
               </p>
               <div className="my-8 text-2xl font-bold rounded-xl border-solid border-2 border-yellow-400 p-5 leading-snug">
                 <strong>Platformable`s Data Governance Toolkit</strong> helps
@@ -110,8 +111,8 @@ export default function CommunityOrganisations() {
           </section>
           <section className="bg-main-color-gradient">
             <div className="mt-10">
-              <h2 className="tracking-wide">Key features</h2>
-              <ul className="text-center text-lg font-semibold tracking-wide ">
+              <h2 className="py-7 tracking-wide">Key features</h2>
+              <ul className="text-center text-lg font-semibold tracking-wide md:grid md:grid-cols-4">
                 <li className="pt-11 pb-7">
                   <figure>
                     <Image src={keyFeatures01} alt=""></Image>
@@ -178,35 +179,52 @@ export default function CommunityOrganisations() {
                     <Image src={keyFeatures01} alt=""></Image>
 
                     <figcaption>
-                      Able to connect to ohter data sets to measure on long term
+                      Able to connect to other data sets to measure on long term
                       outcomes over time
                     </figcaption>
                   </figure>
                 </li>
               </ul>
             </div>
-            <div className="mt-7 flex flex-col items-center">
+            <article className="mt-7 flex flex-col items-center">
               <h2 className="py-7 tracking-wide">Outcomes</h2>
-              <figure className="circular-container">
-                <Image src={outcomes01} width={150} height={150} alt=""></Image>
-                <figcaption>
-                  Ensure time spent cleaning and preparing data for reports
-                </figcaption>
-              </figure>
-              <figure className="circular-container">
-                <Image src={outcomes02} width={150} height={150} alt=""></Image>
-                <figcaption>
-                  Increase fundingn through effective use of data to demostrate
-                  your impact
-                </figcaption>
-              </figure>
-              <figure className="circular-container">
-                <Image src={outcomes03} width={150} height={150} alt=""></Image>
-                <figcaption>
-                  Evidence-based advocacy on key issues facing your community
-                </figcaption>
-              </figure>
-            </div>
+              <div className="flex flex-col md:flex-row md:justify-around">
+                <figure className="circular-container md:p-4 md:mx-5">
+                  <Image
+                    src={outcomes01}
+                    width={150}
+                    height={150}
+                    alt=""
+                  ></Image>
+                  <figcaption>
+                    Ensure time spent cleaning and preparing data for reports
+                  </figcaption>
+                </figure>
+                <figure className="circular-container md:p-4 md:mx-5">
+                  <Image
+                    src={outcomes02}
+                    width={150}
+                    height={150}
+                    alt=""
+                  ></Image>
+                  <figcaption>
+                    Increase funding through effective use of data to demostrate
+                    your impact
+                  </figcaption>
+                </figure>
+                <figure className="circular-container md:p-4 md:mx-5">
+                  <Image
+                    src={outcomes03}
+                    width={150}
+                    height={150}
+                    alt=""
+                  ></Image>
+                  <figcaption>
+                    Evidence-based advocacy on key issues facing your community
+                  </figcaption>
+                </figure>
+              </div>
+            </article>
           </section>
         </main>
       </Layout>
