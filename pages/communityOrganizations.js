@@ -36,15 +36,15 @@ export default function CommunityOrganizations() {
           </Head>
           <section className="container px-5 md:px-8">
             <article className="w-full flex flex-col items-center">
-              <h2 className="mt-14 mb-5 tracking-wide md:self-start ">
+              <h2 className="mt-14 mb-5 tracking-wide md:self-start">
                 Data governance for community organizations
               </h2>
-              <div className="h-6/12 font-bold text-2xl text-left my-5 border-solid border-2 border-yellow-400 p-5">
+              <div className="h-6/12 font-bold text-2xl text-left my-5 border-solid border-2 rounded-xl border-yellow-400 p-5">
                 Data is a necessary asset for community-based organizations when
                 working to meet your goals and reduce societal inequalities
               </div>
-              <ul className="flex flex-col  md:grid md:grid-cols-4 md:gap-3">
-                <li className="  h-72 leading-relaxed   p-4 my-6 block text-center">
+              <ul className="flex flex-col md:w-full  md:grid md:grid-cols-4 md:gap-3">
+                <li className="h-72 leading-relaxed   p-4 my-6 block text-center">
                   <Image
                     src={ensureIcon}
                     width={150}
