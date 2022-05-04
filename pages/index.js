@@ -13,7 +13,7 @@ import Layout from "../components/Layout";
 export default function Home() {
   return (
     <Layout>
-      <main className="min-h-screen top-0">
+      <main className="min-h-screen  top-0">
         <Head>
           <title>Data Governance Toolkit</title>
           <meta
@@ -25,7 +25,7 @@ export default function Home() {
           <link rel="icon" href="/platformable-icon-logo.svg" />
         </Head>
         <div className="bg-image-section">
-          <section className="flex flex-col px-8 pt-28 sm:h-screen md:grid  md:pt-18  grid-cols-2 grid-rows-7 gap-9 sm:gap-2">
+          <section className=" container flex flex-col px-8 pt-28 sm:h-screen md:grid  md:pt-18  grid-cols-2 grid-rows-7 gap-9 sm:gap-2">
             <h1 className="col-start-2  row-start-2 self-center">
               Data that works for you
             </h1>
@@ -48,7 +48,7 @@ export default function Home() {
               place
             </p>
             <div className="col-start-2 row-start-6 md:place-self-start md:justify-self-center md:w-full flex ">
-              <button className="w-5/12 rounded-md sm:min-h-10 bg-blue-900 px-3 py-1 text-white font-semibold tracking-wide">
+              <button className="w-5/12 rounded-md sm:min-h-10 bg-blue-900 px-3 py-1 mr-6 text-white font-semibold tracking-wide">
                 Demo our product
               </button>
               <button className="w-5/12 rounded-md sm:min-h-10 bg-yellow-500 px-3 py-1  font-semibold tracking-wide ">
