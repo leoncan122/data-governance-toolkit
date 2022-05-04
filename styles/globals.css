@@ -43,7 +43,7 @@ h3 {
 .bg-main-color-gradient {
   background: linear-gradient(
     0deg,
-    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 30%,
     rgba(222, 233, 255, 1) 100%
   );
 }

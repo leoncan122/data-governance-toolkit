@@ -23,7 +23,7 @@ export default function CommunityOrganizations() {
   return (
     <>
       <Layout>
-        <main className="min-h-screen px-6 py-24 top-0 px-26 text-center md:pt-18 bg-main-color-gradient flex flex-col items-center">
+        <main className=" min-h-screen  py-24 top-0 px-26  md:pt-18 bg-main-color-gradient flex flex-col items-center">
           <Head>
             <title>Data Governance Toolkit</title>
             <meta
@@ -34,18 +34,17 @@ export default function CommunityOrganizations() {
             />
             <link rel="icon" href="/favicon.ico" />
           </Head>
-          <section className="w-10/12">
+          <section className="container px-5 md:px-8">
             <article className="w-full flex flex-col items-center">
-              <h2 className="my-5 tracking-wide md:self-start ">
+              <h2 className="mt-14 mb-5 tracking-wide md:self-start ">
                 Data governance for community organizations
               </h2>
-              <div className="h-6/12 font-bold text-2xl my-5 border-solid border-2 border-yellow-400 p-5">
+              <div className="h-6/12 font-bold text-2xl text-left my-5 border-solid border-2 border-yellow-400 p-5">
                 Data is a necessary asset for community-based organizations when
                 working to meet your goals and reduce societal inequalities
               </div>
-              {/* //flex-row justify-around items-center */}
               <ul className="flex flex-col  md:grid md:grid-cols-4 md:gap-3">
-                <li className="w-64  h-72 leading-relaxed   p-4 my-6 block text-center">
+                <li className="  h-72 leading-relaxed   p-4 my-6 block text-center">
                   <Image
                     src={ensureIcon}
                     width={150}
@@ -55,7 +54,7 @@ export default function CommunityOrganizations() {
                   <h3>Ensure</h3>
                   <p className="text-xl">data quality</p>
                 </li>
-                <li className="w-64  h-72 leading-relaxed   p-4 my-6 block text-center">
+                <li className="  h-72 leading-relaxed   p-4 my-6 block text-center">
                   <Image
                     src={improveIcon}
                     width={150}
@@ -66,7 +65,7 @@ export default function CommunityOrganizations() {
                   <h3>Improve</h3>
                   <p className="text-xl">service delivery</p>
                 </li>
-                <li className="w-64  h-72  leading-relaxed   p-4 my-6 block text-center">
+                <li className="  h-72  leading-relaxed   p-4 my-6 block text-center">
                   <Image
                     src={advocateIcon}
                     width={150}
@@ -77,7 +76,7 @@ export default function CommunityOrganizations() {
                   <h3>Advocate</h3>
                   <p className="text-xl">more effectively</p>
                 </li>
-                <li className="w-64  h-72 leading-relaxed   p-4 my-6 block text-center">
+                <li className=" h-72 leading-relaxed   p-4 my-6 block text-center">
                   <Image
                     src={generateIcon}
                     width={150}
@@ -91,17 +90,17 @@ export default function CommunityOrganizations() {
               </ul>
             </article>
 
-            <article>
+            <article className="lg:h-96">
               <h2 className="my-8 trackin-wide">
                 The Data Governance Toolkit platform
               </h2>
-              <p className="my-8 text-xl font-semibold leading-relaxed">
+              <p className="my-8 text-xl  leading-relaxed">
                 Our data governance toolkit has been used by large community
                 health organizations across the United States and smaller
                 agencies looking to improve data collection and reporting for a
                 single program
               </p>
-              <div className="my-8 text-2xl font-bold rounded-xl border-solid border-2 border-yellow-400 p-5 leading-snug">
+              <div className="my-16 text-2xl font-bold  rounded-xl text-center border-solid border-2 border-yellow-400 p-5 leading-snug">
                 <strong>Platformable`s Data Governance Toolkit</strong> helps
                 agencies use best practices in data governance and can be
                 customized to specific funding goals by addressing keydata
@@ -109,14 +108,16 @@ export default function CommunityOrganizations() {
               </div>
             </article>
           </section>
-          <section className="bg-main-color-gradient">
-            <div className="mt-10">
+          <section className="px-8 bg-main-color-gradient w-full">
+            <div className="mt-10 text-center">
               <h2 className="py-7 tracking-wide">Key features</h2>
-              <ul className="text-center text-lg font-semibold tracking-wide md:grid md:grid-cols-4">
-                <li className="pt-11 pb-7">
+              <ul className="text-center text-lg font-semibold tracking-wide md:grid md:grid-cols-2 xl:grid-cols-4">
+                <li className="pt-11 md:pt-7 pb-7">
                   <figure>
                     <Image
                       src={keyFeatures01}
+                      width={130}
+                      height={145}
                       alt="Uses widely- used and often free tools"
                     ></Image>
 
@@ -125,10 +126,12 @@ export default function CommunityOrganizations() {
                     </figcaption>
                   </figure>
                 </li>
-                <li className="py-7">
+                <li className="p-7">
                   <figure>
                     <Image
                       src={keyFeatures02}
+                      width={130}
+                      height={145}
                       alt="Fully customizable according to your data collection needs​​"
                     ></Image>
 
@@ -138,10 +141,12 @@ export default function CommunityOrganizations() {
                     </figcaption>
                   </figure>
                 </li>
-                <li className="py-7">
+                <li className="p-7">
                   <figure>
                     <Image
                       src={keyFeatures03}
+                      width={130}
+                      height={145}
                       alt="Integrates with your existing data collection systems and IT tools"
                     ></Image>
 
@@ -151,27 +156,36 @@ export default function CommunityOrganizations() {
                     </figcaption>
                   </figure>
                 </li>
-                <li className="py-7">
+                <li className="p-7">
                   <figure>
                     <Image
                       src={keyFeatures04}
+                      width={130}
+                      height={145}
                       alt="Adaptable as you grow and learn"
                     ></Image>
 
                     <figcaption>Adaptable as you grow and learn</figcaption>
                   </figure>
                 </li>
-                <li className="py-7">
+                <li className="p-7">
                   <figure>
-                    <Image src={keyFeatures05} alt="Secure and safe"></Image>
+                    <Image
+                      src={keyFeatures05}
+                      width={130}
+                      height={145}
+                      alt="Secure and safe"
+                    ></Image>
 
                     <figcaption>Secure and safe</figcaption>
                   </figure>
                 </li>
-                <li className="py-7">
+                <li className="p-7">
                   <figure>
                     <Image
                       src={keyFeatures01}
+                      width={130}
+                      height={145}
                       alt="GDPR and CPAA and data privacy compliant"
                     ></Image>
 
@@ -180,10 +194,12 @@ export default function CommunityOrganizations() {
                     </figcaption>
                   </figure>
                 </li>
-                <li className="py-7">
+                <li className="p-7">
                   <figure>
                     <Image
                       src={keyFeatures07}
+                      width={130}
+                      height={145}
                       alt="Real-time data management to instantly see the impacts of your work"
                     ></Image>
 
@@ -193,10 +209,12 @@ export default function CommunityOrganizations() {
                     </figcaption>
                   </figure>
                 </li>
-                <li className="py-7">
+                <li className="p-7">
                   <figure>
                     <Image
                       src={keyFeatures01}
+                      width={130}
+                      height={145}
                       alt="Able to connect to other data sets to measure impact on long term outcomes over time"
                     ></Image>
 
@@ -208,10 +226,10 @@ export default function CommunityOrganizations() {
                 </li>
               </ul>
             </div>
-            <article className="mt-7 flex flex-col items-center">
+            <article className=" mt-7 flex flex-col items-center font-bold">
               <h2 className="py-7 tracking-wide">Outcomes</h2>
-              <div className="flex flex-col md:flex-row md:justify-around">
-                <figure className="circular-container md:p-4 md:mx-5">
+              <div className="w-10/12 flex flex-col items-center lg:flex-row lg:w-full md:justify-around text-center">
+                <figure className="circular-container  md:p-4 md:mx-5 ">
                   <Image
                     src={outcomes01}
                     width={150}

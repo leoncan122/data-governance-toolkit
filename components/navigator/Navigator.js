@@ -20,8 +20,8 @@ export default function Navigator() {
             </Link>
           </li>
           <li className="p-3">
-            <Link href="/communityOrganisations">
-              <a>Community Organisations</a>
+            <Link href="/communityOrganizations">
+              <a>Community Organizations</a>
             </Link>
           </li>
           <li className="p-3">
