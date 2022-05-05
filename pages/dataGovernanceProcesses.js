@@ -17,6 +17,8 @@ export default function DataGovernanceProcesses() {
         <section className="container px-5 md:px-8">
           <article className="">
             <h2 className="mt-14 mb-5 tracking-wide md:self-start"></h2>
+            <p></p>
+            <div></div>
           </article>
         </section>
       </main>
